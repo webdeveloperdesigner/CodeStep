@@ -3,7 +3,8 @@
     "profile_nft_project_backend": {
       "candid": "src/profile_nft_project_backend/profile_nft_project_backend.did",
       "package": "profile_nft_project_backend",
-      "type": "rust"
+      "type": "rust",
+      "build": "cargo build --target wasm32-unknown-unknown --release"
     },
     "profile_nft_project_frontend": {
       "dependencies": [
