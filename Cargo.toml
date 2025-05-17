@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/profile_nft_project_backend"
+]
+resolver = "2"
