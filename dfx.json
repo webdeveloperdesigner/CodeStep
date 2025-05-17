@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "nft_backend": {
+      "candid": "src/nft_backend/nft_backend.did",
+      "package": "nft_backend",
+      "type": "rust"
+    },
+    "nft_frontend": {
+      "dependencies": [
+        "nft_backend"
+      ],
+      "source": [
+        "src/nft_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "nft_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
