@@ -12,10 +12,13 @@
     "test": "npm test --workspaces --if-present"
   },
   "type": "module",
+   "private": true,
   "workspaces": [
     "src/profile_nft_project_frontend"
   ],
   "devDependencies": {
+    "tailwindcss": "^4.1.7",
     "typescript": "^5.8.3"
   }
+  
 }

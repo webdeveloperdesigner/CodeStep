@@ -41,4 +41,19 @@ export default defineConfig({
     ],
     dedupe: ['@dfinity/agent'],
   },
+  
+
+
+  define: {
+  global: {},
+},
+resolve: {
+  alias: {
+    process: "process/browser",
+  },
+},
+optimizeDeps: {
+  include: ["buffer"],
+}
+
 });
