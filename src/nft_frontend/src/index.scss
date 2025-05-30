@@ -1,7 +1,116 @@
-body {
-  font-family: sans-serif;
-  font-size: 1.5rem;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #0d0d0d, #1f1f1f);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+main {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+  max-width: 480px;
+  width: 90%;
+  animation: fadeIn 0.8s ease;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #00ffee;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #00ffee77;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  input {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.07);
+    color: #fff;
+    box-shadow: inset 0 0 5px #00ffee33;
+    transition: 0.2s ease;
+
+    &:focus {
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 8px #00ffee77;
+    }
+  }
+
+  button {
+    background: #00ffee;
+    color: #000;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #00ccaa;
+      box-shadow: 0 0 10px #00ffeeaa;
+    }
+
+    &:disabled {
+      background: #444;
+      color: #999;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.result {
+  margin-top: 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 1.3rem;
+    color: #aaffaa;
+    text-shadow: 0 0 8px #aaffaa66;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #eee;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 img {
   max-width: 50vw;
@@ -9,33 +118,6 @@ img {
   display: block;
   margin: auto;
 }
-
-form {
-  display: flex;
-  justify-content: center;
-  gap: 0.5em;
-  flex-flow: row wrap;
-  max-width: 40vw;
-  margin: auto;
-  align-items: baseline;
-}
-
-button[type="submit"] {
-  padding: 5px 20px;
-  margin: 10px auto;
-  float: right;
-}
-
-#greeting {
-  margin: 10px auto;
-  padding: 10px 60px;
-  border: 1px solid #222;
-}
-
-#greeting:empty {
-  display: none;
-}
-
 .browser-warning {
   display: none;
 }

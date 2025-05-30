@@ -1,3 +1,6 @@
+type TokenId = nat;
+
 service : {
-    "greet": (text) -> (text) query;
-}
+  "mint_profile_nft": (text) -> (nat64);
+  "get_owner": (nat64) -> (principal);
+};
