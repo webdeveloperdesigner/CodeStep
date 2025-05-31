@@ -1,3 +1,8 @@
 service : {
-    "greet": (text) -> (text) query;
+    "mintProfileNFT": (text, text) -> (bool);
+    "getProfileNFT": (text) -> (opt record { name: text; bio: text });
+    "getCourses": () -> (vec record { id: nat; title: text; description: text });
+    "validateQuiz": (text, vec nat) -> (bool);
+    "generateVC": (text, text) -> (bool);
+    "getVCs": (text) -> (vec record { id: nat; credential: text });
 }

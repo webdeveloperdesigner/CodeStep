@@ -1,0 +1,125 @@
+.footer-section {
+  background-color: #111827;
+  color: white;
+  padding: 3rem 1rem;
+
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .footer-brand {
+    .logo-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      .logo-icon {
+        width: 2rem;
+        height: 2rem;
+        background-color: #2563eb;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          color: white;
+        }
+      }
+
+      .logo-text {
+        margin-left: 0.5rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+
+    .description {
+      color: #9ca3af;
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+
+      .social-link {
+        color: #9ca3af;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .footer-links {
+    h3 {
+      font-weight: 600;
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: #9ca3af;
+          text-decoration: none;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-contact {
+    h3 {
+      font-weight: 600;
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+
+      svg {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+}

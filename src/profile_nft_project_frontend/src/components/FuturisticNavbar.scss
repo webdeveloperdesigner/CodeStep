@@ -1,0 +1,70 @@
+.futuristic-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  padding: 1rem 3rem;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 15px #00fff7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #00fff7;
+  text-shadow: 0 0 10px #00fff7;
+  font-weight: 700;
+  letter-spacing: 2px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7;
+  }
+  to {
+    text-shadow: 0 0 20px #00fff7, 0 0 30px #00fff7;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #00fff7;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #00fff7;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00fff7;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:focus {
+  outline: none;
+  color: #00fff7;
+  text-shadow: 0 0 10px #00fff7;
+}

@@ -1,0 +1,47 @@
+.futuristic-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at center, #1e1e1e, #121212);
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffcc;
+}
+
+.welcome-box {
+  background: rgba(0, 255, 204, 0.1);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px #00ffcc;
+  border: 1px solid #00ffcc;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  to {
+    box-shadow: 0 0 30px #00ffcc;
+  }
+}
+
+.login-btn,
+.logout-btn {
+  background-color: transparent;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover,
+.logout-btn:hover {
+  background-color: #00ffcc;
+  color: #1e1e1e;
+}

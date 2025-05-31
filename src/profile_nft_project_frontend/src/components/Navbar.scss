@@ -1,22 +1,29 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #222;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
   color: white;
-  padding: 1rem;
+}
 
-  ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-    a {
-      color: white;
-      text-decoration: none;
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
 
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-links li a:hover {
+  text-decoration: underline;
 }

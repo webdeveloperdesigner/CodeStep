@@ -1,0 +1,55 @@
+.profile-container {
+  padding: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #5A827E;
+  background: radial-gradient(circle at center, #8DBCC7, #A4CCD9, #C4E1E6);
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.futuristic-box {
+  background: rgba(235, 255, 216, 0.6);
+  border: 1px solid #84AE92;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px #B9D4AA;
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 10px #B9D4AA;
+  }
+  to {
+    box-shadow: 0 0 20px #B9D4AA;
+  }
+}
+
+.vcs-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.vc-card {
+  background: rgba(196, 225, 230, 0.6);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 220px;
+  box-shadow: 0 0 10px #84AE92;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #84AE92;
+  }
+  to {
+    box-shadow: 0 0 20px #84AE92;
+  }
+}

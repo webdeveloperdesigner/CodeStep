@@ -1,21 +1,29 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Dashboard from './pages/Dashboard';
-import Courses from './pages/Courses';
-import Profile from './pages/Profile';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Tenders from './components/Tenders';
+import ClosingSoon from './components/ClosingSoon';
+import Funding from './components/Funding';
+import HowItWorks from './components/HowItWorks';
+import FAQ from './components/FAQ';
+import CTA from './components/CTA';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
-    </Router>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Tenders />
+        <ClosingSoon />
+        <Funding />
+        <HowItWorks />
+        <FAQ />
+        <CTA />
+      </main>
+      <Footer />
+    </>
   );
 }
 

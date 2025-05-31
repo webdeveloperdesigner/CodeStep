@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { initAuth, logout } from "../auth/auth";
-import "./Login.scss";
+import "./FuturisticLogin.scss";
 
-const Login = () => {
+const FuturisticLogin = () => {
   const [authClient, setAuthClient] = useState(null);
   const [principal, setPrincipal] = useState(null);
 
@@ -21,7 +21,7 @@ const Login = () => {
   }, []);
 
   return (
-    <div className="login-container">
+    <div className="futuristic-login-container">
       {principal ? (
         <div className="welcome-box">
           <h2>Welcome!</h2>
@@ -41,4 +41,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default FuturisticLogin;

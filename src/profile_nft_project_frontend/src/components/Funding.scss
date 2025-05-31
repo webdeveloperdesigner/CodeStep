@@ -1,0 +1,113 @@
+.funding-section {
+  background-color: #f3f4f6;
+  padding: 4rem 1rem;
+
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #111827;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: #4b5563;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .funding-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .funding-card {
+      background: linear-gradient(to bottom right, #7c3aed, #2563eb);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.5),
+        0 4px 6px -4px rgba(37, 99, 235, 0.5);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .funding-info {
+        margin-bottom: 1rem;
+
+        h3 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600;
+          font-size: 1.25rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .description {
+          font-size: 0.875rem;
+          margin-bottom: 1rem;
+          color: #d8b4fe;
+        }
+
+        .details {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          font-size: 0.875rem;
+
+          div {
+            flex: 1 1 45%;
+
+            span {
+              font-weight: 500;
+              color: #c4b5fd;
+            }
+
+            strong {
+              margin-left: 0.25rem;
+            }
+          }
+        }
+      }
+
+      .btn-apply {
+        background-color: white;
+        color: #7c3aed;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        border-radius: 0.75rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s ease, color 0.2s ease;
+
+        &:hover {
+          background-color: #d8b4fe;
+          color: #4c1d95;
+        }
+      }
+    }
+  }
+}

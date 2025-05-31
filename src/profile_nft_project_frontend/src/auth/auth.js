@@ -5,8 +5,7 @@ export const initAuth = async () => {
 
   if (!authClient.isAuthenticated()) {
     await authClient.login({
-      identityProvider:
-        "https://identity.ic0.app/#authorize", // Internet Identity URL
+      identityProvider: "https://identity.ic0.app/#authorize",
       onSuccess: () => {
         window.location.reload();
       },
@@ -14,6 +13,11 @@ export const initAuth = async () => {
   }
 
   return authClient;
+};
+
+export const logout = async (authClient) => {
+  await authClient.logout();
+  window.location.reload();
 };
 
 export const getIdentity = async () => {

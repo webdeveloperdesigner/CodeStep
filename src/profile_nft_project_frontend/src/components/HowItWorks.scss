@@ -1,0 +1,82 @@
+.how-it-works-section {
+  background-color: white;
+  padding: 4rem 1rem;
+
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #111827;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: #4b5563;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .step-card {
+      text-align: center;
+
+      .icon-wrapper {
+        width: 4rem;
+        height: 4rem;
+        margin: 0 auto 1rem;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e0e7ff;
+        transition: background-color 0.3s ease;
+
+        svg {
+          display: block;
+        }
+      }
+
+      h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: #111827;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #6b7280;
+      }
+
+      &:hover {
+        .icon-wrapper {
+          background-color: #c7d2fe;
+        }
+      }
+    }
+  }
+}

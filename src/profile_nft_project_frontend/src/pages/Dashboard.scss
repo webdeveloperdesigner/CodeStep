@@ -1,0 +1,93 @@
+.dashboard-container {
+  padding: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #5A827E;
+  background: radial-gradient(circle at center, #8DBCC7, #A4CCD9, #C4E1E6);
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.futuristic-box {
+  background: rgba(235, 255, 216, 0.6);
+  border: 1px solid #84AE92;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px #B9D4AA;
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 10px #B9D4AA;
+  }
+  to {
+    box-shadow: 0 0 30px #B9D4AA;
+  }
+}
+
+.courses-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background: rgba(196, 225, 230, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 0 10px #84AE92;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 0 20px #84AE92;
+}
+
+.enroll-btn {
+  background-color: transparent;
+  border: 2px solid #5A827E;
+  color: #5A827E;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #5A827E;
+  color: #EBFFD8;
+}
+
+.vcs-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.vc-card {
+  background: rgba(196, 225, 230, 0.6);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 0 0 10px #84AE92;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #84AE92;
+  }
+  to {
+    box-shadow: 0 0 20px #84AE92;
+  }
+}
